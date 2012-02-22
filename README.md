@@ -69,16 +69,17 @@ Download and install leiningen wherever you local executables go:
 
 Now get Overtone:
 
-    $ git clone git://github.com/rosejn/overtone.git
+    $ git clone git://github.com/rosejn/overtone.git # get code
 
-    $ cd overtone
-    $ lein deps
+    $ cd overtone 
+    $ lein deps # get overtone dependencies using lein
 
-    ; In Linux you can create a .jackdrc file with this command
-    ; to automatically start the jack server on boot, or you will need
-    ; to run it manually to start the Jack audio server.
-    $ jackd -r -d alsa -r 44100 ; or use qjackctl for a gui
-
+    $ jackd -r -d alsa -r 44100 # start audio server (use qjackctl for a gui)
+    
+    # Note: In Linux you can create a .jackdrc file with the above command
+    # to automatically start the jack server on boot, or you will need
+    # to run it manually to start the Jack audio server.
+    
     $ lein repl
 
     user=> (use 'overtone.live)
