@@ -45,7 +45,7 @@ Join the Overtone <a href="http://groups.google.com/group/overtone">mailing list
 
 ### Ubuntu Quick Setup:
 
-    sudo apt-get install jack-tools ant sun-java6-jdk fftw3 qjackctl
+    sudo apt-get install jack-tools ant sun-java6-jdk fftw3 qjackctl leiningen
 
 You'll need to get the jack audio daemon running, and we recommend qjackctl to
 figure out what command will be best to use.  Then once you have it dialed in you can
@@ -60,7 +60,7 @@ realtime support in the qjacktl options, and the audio server should boot.
 
 Future versions will also support ALSA audio.
 
-Download and install leiningen wherever you local executables go:
+If not using apt-get, download and install leiningen wherever you local executables go:
 
     wget http://github.com/technomancy/leiningen/raw/stable/bin/lein
     chmod u+x lein
