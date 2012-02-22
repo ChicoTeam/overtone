@@ -80,7 +80,7 @@ Now get Overtone:
     # to automatically start the jack server on boot, or you will need
     # to run it manually to start the Jack audio server.
     
-    $ lein repl
+    $ lein repl # start Clojure shell for Overtone
 
     user=> (use 'overtone.live)
     user=> (synth (out 0 (pan2 (sin-osc 440))))
